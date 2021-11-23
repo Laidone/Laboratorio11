@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+yvs2muqNE4m+INCr407r9cHZjnRuzj973Onlho3MP6SXqaIHjhGFoZRZLEDaeqnnHuKPbXo1HIkG42WjjgEJg==",
+  "dgSpecHash": "uKv2jWr+3uAazCMxutlazHb53RXL/x7K9JwTupRrKAnxbd0isJZAed1Yp28xraurkwRgR4ZLDw3RDeTrW00Y1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lmendeca\\Documents\\Treinamento.NET\\Trilha .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\DemoLinq.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Done\\Documents\\Laidone\\NTT .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\DemoLinq.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Done\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Done\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Done\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Done\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
   "logs": []
 }

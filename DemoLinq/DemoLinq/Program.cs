@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+Nome: Laidone Mendes de Carvalho
+Laboratório 11
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -35,9 +39,9 @@ namespace DemoLinq
          }
 
          //Consulta LINQ
-         var resultado2 = from p in pessoas
+         var resultado2 = (from p in pessoas
                           where p.Casada
-                          select p;
+                          select p);
          Console.WriteLine("\nPessoas casadas, consulta linq:");
 
          foreach (Pessoa p in resultado2)
@@ -123,34 +127,107 @@ namespace DemoLinq
                Console.WriteLine(p);
             }
          }
+         
+         //Número de pessoas que fazem aniversário em cada mês da semana
+         int janeiro = (from p in pessoas
+                        where p.DataNascimento.Month == 1
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em outubro é " + janeiro);
+
+         int fevereiro = (from p in pessoas
+                        where p.DataNascimento.Month == 2
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em fevereiro é " + fevereiro);
+
+         int marco = (from p in pessoas
+                        where p.DataNascimento.Month == 3
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em marco é " + marco);
+
+         int abril = (from p in pessoas
+                        where p.DataNascimento.Month == 4
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em abril é " + abril);
+
+         int maio = (from p in pessoas
+                        where p.DataNascimento.Month == 5
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em maio é " + maio);
+
+         int junho = (from p in pessoas
+                        where p.DataNascimento.Month == 6
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em junho é " + junho);
+
+         int julho = (from p in pessoas
+                        where p.DataNascimento.Month == 7
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em julho é " + julho);
+
+         int agosto = (from p in pessoas
+                        where p.DataNascimento.Month == 8
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em agosto é " + agosto);
+
+         int setembro = (from p in pessoas
+                        where p.DataNascimento.Month == 9
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em setembro é " + setembro);
+
+         int outubro = (from p in pessoas
+                        where p.DataNascimento.Month == 10
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em outubro é " + outubro);
+
+         int novembro = (from p in pessoas
+                        where p.DataNascimento.Month == 11
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em novembro é " + novembro);
+
+         int dezembro = (from p in pessoas
+                        where p.DataNascimento.Month == 12
+                        select p.Nome).Count();
+         System.Console.WriteLine("Pessoas que fazem aniversário em dezembro é " + dezembro);
+         
          System.Console.WriteLine("\nPessoa mais velha");
          var resultado12 = pessoas.Min(p => p.DataNascimento);
          var resultado13 = (from p in pessoas
                            where p.DataNascimento == resultado12
                            select p.Nome).ToList();
          int c = resultado13.Count;
+
          foreach(var p in resultado13)
          {
             System.Console.WriteLine(p);
-            System.Console.WriteLine(c);
          }
-         System.Console.WriteLine("\nPessoa solteira mais nova");
-         var resultado14 = pessoas.Max(p => p.DataNascimento);
 
-            var r15 = (from p in pessoas
-                     let maiorIdade = pessoas.Where(q => !q.Casada).Max(q => q.DataNascimento)
-                     where p.DataNascimento == maiorIdade
-                     select p).First();
-            /*
-            .GroupBy(c => c.Name)
-           .Where(grp => grp.Count() > 1)
-            .Select(grp => grp.Key);
-            */
-                          /* from p in pessoas
-                           where p.DataNascimento == resultado14
-                           group p by p.Casada
-                           );*/
-         System.Console.WriteLine(r15.Nome);
+         System.Console.WriteLine("\nPessoa solteira mais nova");
+         //var resultado14 = pessoas.Max(p => p.DataNascimento);
+         //Pessoa solteira mais nova
+          var resultado14 = (from p in pessoas
+                           where !p.Casada
+                           select p).ToList();
+         var resultado15 = (from p in resultado14
+                           where p.DataNascimento == resultado14.Max(p => p.DataNascimento)
+                           select p.Nome).ToList();
+          foreach(var p in resultado15)
+          {
+             System.Console.WriteLine(p);
+          }
+         //Idade média das pessoas em anos
+         var resultado16 = (from p in pessoas
+                           select p.DataNascimento.Year).ToList();
+         int soma = 0;
+         int cont = 0;
+         double media;              
+         foreach (var p in resultado16)
+         {
+            soma = soma + p;
+            ++cont;
+         }
+         media = soma/cont;
+         System.Console.WriteLine("Média dos anos das pessoas " + media);
+
          Console.ReadLine();
       }
    }
