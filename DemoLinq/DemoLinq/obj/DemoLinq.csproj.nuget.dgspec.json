@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Done\\Documents\\Laidone\\NTT .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\DemoLinq.csproj": {}
+    "C:\\Users\\lmendeca\\Documents\\Treinamento.NET\\Trilha .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\DemoLinq.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Done\\Documents\\Laidone\\NTT .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\DemoLinq.csproj": {
+    "C:\\Users\\lmendeca\\Documents\\Treinamento.NET\\Trilha .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\DemoLinq.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Done\\Documents\\Laidone\\NTT .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\DemoLinq.csproj",
+        "projectUniqueName": "C:\\Users\\lmendeca\\Documents\\Treinamento.NET\\Trilha .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\DemoLinq.csproj",
         "projectName": "DemoLinq",
-        "projectPath": "C:\\Users\\Done\\Documents\\Laidone\\NTT .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\DemoLinq.csproj",
-        "packagesPath": "C:\\Users\\Done\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Done\\Documents\\Laidone\\NTT .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\obj\\",
+        "projectPath": "C:\\Users\\lmendeca\\Documents\\Treinamento.NET\\Trilha .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\DemoLinq.csproj",
+        "packagesPath": "C:\\Users\\lmendeca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lmendeca\\Documents\\Treinamento.NET\\Trilha .NET\\Laboratorio11\\DemoLinq\\DemoLinq\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Done\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\lmendeca\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,24 +47,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.12, 5.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Done\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Done\\.nuget\\packages"
+      "C:\\Users\\lmendeca\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lmendeca\\.nuget\\packages"
     ]
   }
 }

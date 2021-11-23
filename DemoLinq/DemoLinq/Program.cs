@@ -207,6 +207,7 @@ namespace DemoLinq
           var resultado14 = (from p in pessoas
                            where !p.Casada
                            select p).ToList();
+         
          var resultado15 = (from p in resultado14
                            where p.DataNascimento == resultado14.Max(p => p.DataNascimento)
                            select p.Nome).ToList();
@@ -215,6 +216,7 @@ namespace DemoLinq
              System.Console.WriteLine(p);
           }
          //Idade média das pessoas em anos
+         //Modo tradicional
          var resultado16 = (from p in pessoas
                            select p.DataNascimento.Year).ToList();
          int soma = 0;
@@ -227,7 +229,11 @@ namespace DemoLinq
          }
          media = soma/cont;
          System.Console.WriteLine("Média dos anos das pessoas " + media);
-
+         //Modo por LINQ
+         var resultado17 = (from p in pessoas
+                           select p.DataNascimento.Year).Average();
+         System.Console.WriteLine($"Média em formato real: {resultado17}");
+         System.Console.WriteLine(($"Média em formato inteiro: {(int)resultado17}"));
          Console.ReadLine();
       }
    }
